@@ -15,23 +15,23 @@ const Company = () => {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxzb2xhciUyMGZhcm18ZW58MHx8fHwxNzYxMzM1MTYxfDA&ixlib=rb-4.1.0&q=85"
             alt="Company"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm-px-6 lg-px-8 py-32 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center w-full">
           <div className="inline-block mb-6">
-            <span className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-pink-500-10 via-purple-500-10 to-orange-400-10 border border-purple-500-20 text-gray-300">
+            <span className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-orange-400/10 border border-purple-500/20 text-gray-300">
               About KlarityIQ
             </span>
           </div>
-          <h1 className="text-5xl md-text-6xl font-bold mb-6 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto text-white">
             Powering the Future of Solar Operations
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -42,13 +42,13 @@ const Company = () => {
 
       {/* Mission & Vision */}
       <section className="py-24 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
-          <div className="grid grid-cols-1 md-grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-purple-900-20 to-pink-900-20 border border-gray-800 rounded-2xl p-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-gray-800 rounded-2xl p-8">
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
               <p className="text-gray-300 text-lg leading-relaxed">{companyInfo.mission}</p>
             </div>
-            <div className="bg-gradient-to-br from-orange-900-20 to-purple-900-20 border border-gray-800 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-orange-900/20 to-purple-900/20 border border-gray-800 rounded-2xl p-8">
               <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
               <p className="text-gray-300 text-lg leading-relaxed">{companyInfo.vision}</p>
             </div>
@@ -58,16 +58,16 @@ const Company = () => {
 
       {/* Company Stats */}
       <section className="py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md-text-5xl font-bold mb-4">Our Impact</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Impact</h2>
             <p className="text-xl text-gray-400">Delivering measurable results for solar operations worldwide</p>
           </div>
 
-          <div className="grid grid-cols-1 md-grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {companyInfo.stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl md-text-6xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 bg-clip-text text-transparent mb-3">
+                <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 bg-clip-text text-transparent mb-3">
                   {stat.value}
                 </div>
                 <div className="text-gray-400 text-lg">{stat.label}</div>
@@ -79,23 +79,23 @@ const Company = () => {
 
       {/* Core Values */}
       <section className="py-24 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md-text-5xl font-bold mb-4">Our Core Values</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Core Values</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               The principles that guide everything we do
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {companyInfo.values.map((value, index) => {
               const Icon = iconMap[value.icon];
               return (
                 <div
                   key={index}
-                  className="bg-gray-900-50 border border-gray-800 rounded-2xl p-8 hover:border-purple-500-50 transition-all duration-300 text-center"
+                  className="bg-gray-900/50 border border-gray-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 text-center"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-pink-500-10 via-purple-500-10 to-orange-400-10 rounded-xl border border-purple-500-20 mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-orange-400/10 rounded-xl border border-purple-500/20 mb-6">
                     <Icon className="text-purple-400" size={32} />
                   </div>
                   <h3 className="text-2xl font-semibold mb-3">{value.title}</h3>
@@ -109,39 +109,20 @@ const Company = () => {
 
       {/* Team Section */}
       <section className="py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md-text-5xl font-bold mb-4">Leadership Team</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Leadership Team</h2>
             <p className="text-xl text-gray-400">Experts driving innovation in solar analytics</p>
           </div>
 
-          <div className="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-4 gap-8">
-            {companyInfo.team.map((member, index) => (
-              <div
-                key={index}
-                className="group bg-black-50 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-500-50 transition-all duration-300"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-purple-400 text-sm mb-3">{member.role}</p>
-                  <p className="text-gray-400 text-sm">{member.bio}</p>
-                </div>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
           </div>
         </div>
       </section>
 
       {/* Culture Section */}
-      <section className="py-24 bg-black">
+      {/* <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
           <div className="grid grid-cols-1 lg-grid-cols-2 gap-12 items-center">
             <div>
@@ -170,12 +151,12 @@ const Company = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-24 bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm-px-6 lg-px-8 text-center">
-          <h2 className="text-4xl md-text-5xl font-bold mb-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Let's Build the Future Together
           </h2>
           <p className="text-xl text-gray-400 mb-8">

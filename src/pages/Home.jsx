@@ -48,11 +48,11 @@ const Home = () => {
                   {heroData.ctaText}
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                 </Link>
-                <button
+                {/* <button
                   className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-white/40 hover:bg-white/10 bg-transparent text-white font-semibold px-8 py-4 text-lg rounded-xl transition-all duration-300"
                 >
                   {heroData.secondaryCtaText}
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

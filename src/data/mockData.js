@@ -12,7 +12,7 @@ export const heroData = {
   subtitle: 'Powered by Advanced Analytics',
   description: 'Transform your solar farm operations with real-time variance dashboards, predictive analytics, and intelligent forecasting for maximum performance and ROI.',
   ctaText: 'Get Started',
-  secondaryCtaText: 'Watch Demo',
+  // secondaryCtaText: 'Watch Demo',
   heroImage: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxzb2xhciUyMGZhcm18ZW58MHx8fHwxNzYxMzM1MTYxfDA&ixlib=rb-4.1.0&q=85'
 };
 

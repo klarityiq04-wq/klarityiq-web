@@ -17,23 +17,23 @@ const Product = () => {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1509389928833-fe62aef36deb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxzb2xhciUyMGZhcm18ZW58MHx8fHwxNzYxMzM1MTYxfDA&ixlib=rb-4.1.0&q=85"
             alt="Solar Operations"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm-px-6 lg-px-8 py-32 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center w-full">
           <div className="inline-block mb-6">
-            <span className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-pink-500-10 via-purple-500-10 to-orange-400-10 border border-purple-500-20 text-gray-300">
+            <span className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-orange-400/10 border border-purple-500/20 text-gray-300">
               Product Overview
             </span>
           </div>
-          <h1 className="text-5xl md-text-6xl font-bold mb-6 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto text-white">
             The Complete Solar Farm Intelligence Platform
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -51,7 +51,7 @@ const Product = () => {
 
       {/* Product Features */}
       <section className="py-24 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {productFeatures.map((section, index) => {
             const Icon = icons[index % icons.length];
             const isEven = index % 2 === 0;
@@ -59,10 +59,10 @@ const Product = () => {
             return (
               <div
                 key={index}
-                className={`grid grid-cols-1 lg-grid-cols-2 gap-12 items-center mb-32 last:mb-0`}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32 last:mb-0`}
               >
                 {/* Image Side */}
-                <div className={`${isEven ? 'lg-order-1' : 'lg-order-2'}`}>
+                <div className={`${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                     <img
@@ -82,9 +82,9 @@ const Product = () => {
                 </div>
 
                 {/* Content Side */}
-                <div className={`${isEven ? 'lg-order-2' : 'lg-order-1'}`}>
+                <div className={`${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                   <div className="inline-block mb-4">
-                    <span className="text-sm font-medium px-3 py-1 rounded-full bg-gradient-to-r from-pink-500-10 via-purple-500-10 to-orange-400-10 border border-purple-500-20 text-purple-400">
+                    <span className="text-sm font-medium px-3 py-1 rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-orange-400/10 border border-purple-500/20 text-purple-400">
                       {section.category}
                     </span>
                   </div>
@@ -107,15 +107,15 @@ const Product = () => {
 
       {/* Key Benefits */}
       <section className="py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md-text-5xl font-bold mb-4">Why Choose KlarityIQ?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose KlarityIQ?</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Built specifically for solar farm operations with industry-leading capabilities
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: 'Real-Time Precision',
@@ -150,7 +150,7 @@ const Product = () => {
             ].map((benefit, index) => (
               <div
                 key={index}
-                className="bg-black-50 border border-gray-800 rounded-2xl p-6 hover:border-purple-500-50 transition-all duration-300"
+                className="bg-black/50 border border-gray-800 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300"
               >
                 <div className="text-4xl mb-4">{benefit.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
@@ -163,14 +163,14 @@ const Product = () => {
 
       {/* CTA Section */}
       <section className="py-24 bg-black">
-        <div className="max-w-4xl mx-auto px-4 sm-px-6 lg-px-8 text-center">
-          <h2 className="text-4xl md-text-5xl font-bold mb-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             See KlarityIQ in Action
           </h2>
           <p className="text-xl text-gray-400 mb-8">
             Schedule a personalized demo to see how KlarityIQ can transform your solar operations
           </p>
-          <div className="flex flex-col sm-flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
               className="bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 hover:opacity-90 text-white font-medium px-6 py-2 text-lg rounded-md transition-all duration-300"

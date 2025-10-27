@@ -27,20 +27,20 @@ const Footer = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label="YouTube"
               >
                 <Youtube size={20} />
-              </a>
+              </a> */}
               <a
                 href="mailto:info@klarityiq.com"
                 className="text-gray-400 hover:text-white transition-colors duration-200"

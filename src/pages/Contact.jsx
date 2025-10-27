@@ -205,8 +205,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email</h3>
-                    <p className="text-gray-400">info@klarityiq.com</p>
-                    <p className="text-gray-400">support@klarityiq.com</p>
+                    <p className="text-gray-400">info@klarityiq.ai</p>
                   </div>
                 </div>
 
@@ -216,12 +215,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Phone</h3>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">+(91) 9310180414</p>
                     <p className="text-gray-500 text-sm">Mon-Fri, 9am-6pm EST</p>
                   </div>
                 </div>
 
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <div className="p-3 bg-gradient-to-br from-pink-500-10 via-purple-500-10 to-orange-400-10 rounded-xl border border-purple-500-20 mr-4">
                     <MapPin className="text-purple-400" size={24} />
                   </div>
@@ -230,7 +229,7 @@ const Contact = () => {
                     <p className="text-gray-400">123 Solar Drive</p>
                     <p className="text-gray-400">San Francisco, CA 94105</p>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Response Time */}
@@ -242,7 +241,7 @@ const Contact = () => {
               </div>
 
               {/* Demo CTA */}
-              <div className="bg-black-50 border border-gray-800 rounded-2xl p-6">
+              {/* <div className="bg-black-50 border border-gray-800 rounded-2xl p-6">
                 <h3 className="text-xl font-semibold mb-3">Schedule a Live Demo</h3>
                 <p className="text-gray-400 mb-4">
                   See KlarityIQ in action with a personalized demo using your actual solar farm data.
@@ -252,14 +251,14 @@ const Contact = () => {
                 >
                   Book Demo Now
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* Map Section (Optional) */}
-      <section className="py-24 bg-gray-900">
+      {/* <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Visit Our Office</h2>
@@ -269,7 +268,7 @@ const Contact = () => {
             <p className="text-gray-500">Interactive Map Placeholder</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
