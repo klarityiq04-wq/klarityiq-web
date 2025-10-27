@@ -11,10 +11,27 @@ import Contact from "./pages/Contact";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate initial load
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="App flex items-center justify-center min-h-screen bg-black">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/klarityiq-web">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
