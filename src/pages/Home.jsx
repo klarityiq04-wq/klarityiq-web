@@ -15,49 +15,44 @@ const Home = () => {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
             src={heroData.heroImage}
             alt="Solar Farm"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm-px-6 lg-px-8 py-32">
-          <div className="grid grid-cols-1 lg-grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-block">
-                <span className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-pink-500-10 via-purple-500-10 to-orange-400-10 border border-purple-500-20 text-gray-300">
+                <span className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-orange-400/10 border border-purple-500/20 text-gray-300">
                   {heroData.subtitle}
                 </span>
               </div>
-              <h1 className="text-5xl md-text-6xl lg-text-7xl font-bold leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
                 {heroData.title}
               </h1>
               <p className="text-xl text-gray-300 max-w-xl">
                 {heroData.description}
               </p>
               <div className="flex flex-col sm-flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow hover:bg-primary-90 h-9 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 text-white font-medium px-6 py-2 rounded-md hover:opacity-90 transition-opacity duration-300"
-                  asChild
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 text-white font-semibold px-8 py-4 text-lg rounded-xl hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
                 >
-                  <Link to="/contact">
-                    {heroData.ctaText}
-                    <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                  </Link>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-white-20 hover:border-white-40 bg-transparent text-white px-8 py-6 text-lg rounded-md transition-all duration-300"
+                  {heroData.ctaText}
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+                <button
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-white/40 hover:bg-white/10 bg-transparent text-white font-semibold px-8 py-4 text-lg rounded-xl transition-all duration-300"
                 >
                   {heroData.secondaryCtaText}
-                </Button>
+                </button>
               </div>
             </div>
           </div>
@@ -103,16 +98,13 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button
-              size="lg"
-              className="bg-white text-black hover:bg-gray-200 font-medium px-6 py-2 text-lg rounded-md transition-all duration-300"
-              asChild
+            <Link 
+              to="/product" 
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 text-white font-semibold px-10 py-4 text-lg rounded-xl hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
             >
-              <Link to="/product">
-                Explore All Features
-                <ArrowRight className="ml-2" size={20} />
-              </Link>
-            </Button>
+              Explore All Features
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
@@ -200,21 +192,13 @@ const Home = () => {
             Join hundreds of solar farms already maximizing their performance with KlarityIQ
           </p>
           <div className="flex flex-col sm-flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 hover:opacity-90 text-white font-medium px-6 py-2 text-lg rounded-md transition-all duration-300"
-              asChild
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-400 text-white font-semibold px-12 py-4 text-lg rounded-xl hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
             >
-              <Link to="/contact">Schedule a Demo</Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white-20 hover:border-white-40 bg-transparent text-white px-8 py-6 text-lg rounded-md transition-all duration-300"
-              asChild
-            >
-              <Link to="/pricing">View Pricing</Link>
-            </Button>
+              Schedule a Demo
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>

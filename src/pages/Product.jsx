@@ -181,14 +181,14 @@ const Product = () => {
                 <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-2 border-white-20 hover:border-white-40 bg-transparent text-white px-8 py-6 text-lg rounded-md transition-all duration-300"
               asChild
             >
               <Link to="/pricing">View Pricing</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

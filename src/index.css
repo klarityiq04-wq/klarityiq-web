@@ -2,52 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-*, ::before, ::after {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: initial;
-    --tw-pan-y: initial;
-    --tw-pinch-zoom: initial;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-gradient-from-position: initial;
-    --tw-gradient-via-position: initial;
-    --tw-gradient-to-position: initial;
-    --tw-ordinal: initial;
-    --tw-slashed-zero: initial;
-    --tw-numeric-figure: initial;
-    --tw-numeric-spacing: initial;
-    --tw-numeric-fraction: initial;
-    --tw-ring-inset: initial;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgb(59 130 246 / 0.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: initial;
-    --tw-brightness: initial;
-    --tw-contrast: initial;
-    --tw-grayscale: initial;
-    --tw-hue-rotate: initial;
-    --tw-invert: initial;
-    --tw-saturate: initial;
-    --tw-sepia: initial;
-    --tw-drop-shadow: initial;
-    --tw-backdrop-blur: initial;
-    --tw-backdrop-brightness: initial;
-    --tw-backdrop-contrast: initial;
-    --tw-backdrop-grayscale: initial;
-    --tw-backdrop-hue-rotate: initial;
-    --tw-backdrop-invert: initial;
-    --tw-backdrop-opacity: initial;
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+* {
+  border-color: hsl(var(--border));
     --tw-backdrop-saturate: initial;
     --tw-backdrop-sepia: initial;
     --tw-contain-size: initial;

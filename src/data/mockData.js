@@ -3,7 +3,7 @@
 export const navigationLinks = [
   { name: 'Product', path: '/product' },
   { name: 'Company', path: '/company' },
-  { name: 'Pricing', path: '/pricing' },
+  // { name: 'Pricing', path: '/pricing' },
   { name: 'Contact Us', path: '/contact' }
 ];
 
