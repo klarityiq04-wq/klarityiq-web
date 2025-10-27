@@ -29,9 +29,12 @@ function App() {
     );
   }
 
+  // Use basename only in production (GitHub Pages)
+  const basename = process.env.NODE_ENV === 'production' ? '/klarityiq-web' : '';
+
   return (
     <div className="App">
-      <BrowserRouter basename="/klarityiq-web">
+      <BrowserRouter basename={basename}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
