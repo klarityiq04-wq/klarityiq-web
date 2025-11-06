@@ -220,16 +220,16 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* <div className="flex items-center">
+                <div className="flex items-center">
                   <div className="p-3 bg-gradient-to-br from-pink-500-10 via-purple-500-10 to-orange-400-10 rounded-xl border border-purple-500-20 mr-4">
                     <MapPin className="text-purple-400" size={24} />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Office</h3>
-                    <p className="text-gray-400">123 Solar Drive</p>
-                    <p className="text-gray-400">San Francisco, CA 94105</p>
+                    <p className="text-gray-400">KlartiyIQ, Unit-37, Floor 01-FF, ITHUM-73,</p>
+                    <p className="text-gray-400">Sector-73, Noida (UP),201301</p>
                   </div>
-                </div> */}
+                </div>
               </div>
 
               {/* Response Time */}
