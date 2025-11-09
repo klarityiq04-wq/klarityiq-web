@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { navigationLinks } from '../data/mockData';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
+import TopLogo from '../../src/white_transparent_logo.png'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="https://customer-assets.emergentagent.com/job_d9b73cf7-eeb5-4abd-977e-ef6aecfce862/artifacts/jkz3bb08_KLARITYIQ_logo_original.png"
+              src={TopLogo}
               alt="KlarityIQ"
               className="h-24 w-auto transition-transform duration-300 group-hover:scale-105"
             />
