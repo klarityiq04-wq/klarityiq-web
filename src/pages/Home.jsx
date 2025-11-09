@@ -151,7 +151,7 @@ const Home = () => {
                 </div>
                 <p className="text-gray-300 mb-6 leading-relaxed">{testimonial.quote}</p>
                 <div>
-                  <div className="font-semibold text-white">{testimonial.author}</div>
+                  {/* <div className="font-semibold text-white">{testimonial.author}</div> */}
                   <div className="text-sm text-gray-400">{testimonial.role}</div>
                   <div className="text-sm text-gray-500">{testimonial.company}</div>
                 </div>

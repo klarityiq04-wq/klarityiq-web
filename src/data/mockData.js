@@ -208,21 +208,21 @@ export const pricingPlans = [
 export const testimonials = [
   {
     quote: 'KlarityIQ has transformed how we manage our 150 MW portfolio. The variance dashboards immediately identified underperforming assets, resulting in a 12% production increase.',
-    author: 'David Martinez',
+    // author: 'David Martinez',
     role: 'Operations Director',
-    company: 'SunPower Ventures'
+    company: 'Leading Solar Coorporation in USA'
   },
   {
     quote: 'The predictive analytics feature is a game-changer. We\'ve reduced unplanned downtime by 60% and maintenance costs by 35% in just six months.',
-    author: 'Lisa Thompson',
+    // author: 'Lisa Thompson',
     role: 'VP of Asset Management',
-    company: 'GreenField Energy'
+    company: 'Global Renewable Energy Leader'
   },
   {
     quote: 'Finally, a platform that delivers real financial insights. The ROI tracking and variance analysis have made stakeholder reporting effortless.',
-    author: 'Robert Chen',
+    // author: 'Robert Chen',
     role: 'Chief Financial Officer',
-    company: 'Horizon Solar Holdings'
+    company: 'Leading Solar Company'
   }
 ];
 
