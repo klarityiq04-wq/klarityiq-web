@@ -1,5 +1,13 @@
 // Mock data for KlarityIQ website
 
+// Import integration logos
+import SolarEdgeLogo from '../assets/solaredge-logo.png';
+import EnphaseLogo from '../assets/enphase-logo.gif';
+import SMALogo from '../assets/Logo_SMA.svg.png';
+import HuaweiLogo from '../assets/Huawei-Logo-2006.png';
+import FroniusLogo from '../assets/p48-36-fronius-2534909198.png';
+import ABBLogo from '../assets/Abb_logo.png';
+
 export const navigationLinks = [
   { name: 'Product', path: '/product' },
   { name: 'Company', path: '/company' },
@@ -254,10 +262,10 @@ export const faqs = [
 ];
 
 export const integrations = [
-  { name: 'SolarEdge', logo: 'https://via.placeholder.com/120x60/000000/FFFFFF?text=SolarEdge' },
-  { name: 'Enphase', logo: 'https://via.placeholder.com/120x60/000000/FFFFFF?text=Enphase' },
-  { name: 'SMA', logo: 'https://via.placeholder.com/120x60/000000/FFFFFF?text=SMA' },
-  { name: 'Huawei', logo: 'https://via.placeholder.com/120x60/000000/FFFFFF?text=Huawei' },
-  { name: 'Fronius', logo: 'https://via.placeholder.com/120x60/000000/FFFFFF?text=Fronius' },
-  { name: 'ABB', logo: 'https://via.placeholder.com/120x60/000000/FFFFFF?text=ABB' }
+  { name: 'SolarEdge', logo: SolarEdgeLogo },
+  { name: 'Enphase', logo: EnphaseLogo },
+  { name: 'SMA', logo: SMALogo },
+  { name: 'Huawei', logo: HuaweiLogo },
+  { name: 'Fronius', logo: FroniusLogo },
+  { name: 'ABB', logo: ABBLogo }
 ];

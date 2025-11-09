@@ -163,19 +163,23 @@ const Home = () => {
 
       {/* Integrations Section */}
       <section className="py-24 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm-px-6 lg-px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md-text-5xl font-bold mb-4">Seamless Integrations</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Seamless Integrations</h2>
             <p className="text-xl text-gray-400">Works with all major solar hardware platforms</p>
           </div>
 
-          <div className="grid grid-cols-2 md-grid-cols-3 lg-grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {integrations.map((integration, index) => (
               <div
                 key={index}
-                className="bg-white-5 border border-gray-800 rounded-lg p-6 flex items-center justify-center hover:bg-white-10 transition-all duration-300"
+                className="bg-white/5 border border-gray-800 rounded-lg p-6 flex items-center justify-center hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group"
               >
-                <span className="text-gray-400 font-medium text-sm">{integration.name}</span>
+                <img 
+                  src={integration.logo} 
+                  alt={`${integration.name} logo`}
+                  className="w-full h-auto max-h-12 object-contain brightness-90 group-hover:brightness-110 group-hover:scale-105 transition-all duration-300"
+                />
               </div>
             ))}
           </div>
