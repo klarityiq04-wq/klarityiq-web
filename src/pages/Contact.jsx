@@ -227,7 +227,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Office</h3>
                     <p className="text-gray-400">KlarityIQ, Unit-37, Floor 01-FF, ITHUM-73,</p>
-                    <p className="text-gray-400">Sector-73, Noida (UP),201301</p>
+                    <p className="text-gray-400">Sector-73, Noida (UP), 201301</p>
                   </div>
                 </div>
               </div>
