@@ -176,7 +176,6 @@ p { color: var(--grey-600); }
   .nav-dropdown-panel { display: block; position: static; box-shadow: none; background: transparent; width: 100%; padding: 0 0 0 12px; }
   .nav-dropdown-panel a { color: var(--grey-300); padding: 8px 0; }
   .nav-toggle { display: block; }
-  .nav-cta .btn-outline { display: none; }
 }
 
 /* ---------- Hero ---------- */

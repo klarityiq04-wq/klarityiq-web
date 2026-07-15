@@ -57,7 +57,6 @@ export const FOOTER_COLUMNS = [
       { to: "/contact", label: "Contact" },
       { to: "#", label: "Careers" },
       { to: "/contact", label: "Book a Demo" },
-      { to: "/contact", label: "Log In" },
     ],
   },
 ];

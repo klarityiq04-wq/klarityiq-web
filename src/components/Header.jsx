@@ -45,7 +45,6 @@ export default function Header() {
           ))}
         </div>
         <div className="nav-cta">
-          <Link to="/contact" className="btn btn-outline">Log In</Link>
           <Link to="/contact" className="btn btn-primary">Book a Demo</Link>
           <button
             type="button"
