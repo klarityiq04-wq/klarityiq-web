@@ -2,91 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- Favicon - Multiple sizes for better compatibility -->
+    <!-- Favicon — the "K" brand mark, matching the site header/footer -->
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/logo_fav.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/logo_fav.png" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/logo_fav.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo_fav.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo_fav.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/logo_fav.png" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/logo512.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#12142b" />
     
     <!-- Primary Meta Tags -->
-    <title>KlarityIQ - Solar Farm Analytics & Monitoring Platform | AI-Powered Solar Intelligence</title>
-    <meta name="title" content="KlarityIQ - Solar Farm Analytics & Monitoring Platform | AI-Powered Solar Intelligence" />
-    <meta name="description" content="Transform your solar farm operations with KlarityIQ's AI-powered analytics platform. Real-time monitoring, predictive analytics, variance dashboards, and intelligent forecasting for utility-scale solar farms. Maximize ROI and efficiency." />
-    <meta name="keywords" content="solar farm analytics, solar monitoring software, solar farm management, solar power monitoring, utility scale solar, solar farm intelligence, solar analytics platform, solar energy monitoring, solar farm optimization, renewable energy analytics, solar performance monitoring, PV monitoring system, solar inverter monitoring, solar farm dashboard, solar energy management software" />
+    <title>KlarityIQ | From Connected Data to Autonomous Action</title>
+    <meta name="title" content="KlarityIQ | From Connected Data to Autonomous Action" />
+    <meta name="description" content="KlarityIQ connects your IoT infrastructure, deploys agentic AI to act on it in real time, and delivers the digital transformation outcomes your business needs." />
+    <meta name="keywords" content="industrial IoT, agentic AI, digital transformation, predictive maintenance, production management, inventory management, traceability, manufacturing, logistics, warehouse, pharmaceutical" />
     <meta name="author" content="KlarityIQ" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
-    <link rel="canonical" href="https://shubhamsinghmutualmobile.github.io/klarityiq-web/" />
-    
+    <link rel="canonical" href="https://klarityiq.ai/" />
+
     <!-- Google Site Verification - ADD YOUR VERIFICATION CODE HERE -->
     <!-- After you get the code from Google Search Console, replace XXXXX below -->
     <!-- <meta name="google-site-verification" content="XXXXX" /> -->
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shubhamsinghmutualmobile.github.io/klarityiq-web/" />
-    <meta property="og:title" content="KlarityIQ - Solar Farm Analytics & Monitoring Platform" />
-    <meta property="og:description" content="Transform your solar farm operations with AI-powered analytics. Real-time monitoring, predictive analytics, and intelligent forecasting for maximum solar farm performance." />
-    <meta property="og:image" content="https://customer-assets.emergentagent.com/job_d9b73cf7-eeb5-4abd-977e-ef6aecfce862/artifacts/jkz3bb08_KLARITYIQ_logo_original.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/png" />
-    
+    <meta property="og:url" content="https://klarityiq.ai/" />
+    <meta property="og:title" content="KlarityIQ | From Connected Data to Autonomous Action" />
+    <meta property="og:description" content="KlarityIQ connects your IoT infrastructure, deploys agentic AI to act on it in real time, and delivers the digital transformation outcomes your business needs." />
+    <meta property="og:image" content="https://klarityiq.ai/icon.png" />
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://shubhamsinghmutualmobile.github.io/klarityiq-web/" />
-    <meta property="twitter:title" content="KlarityIQ - Solar Farm Analytics & Monitoring Platform" />
-    <meta property="twitter:description" content="Transform your solar farm operations with AI-powered analytics. Real-time monitoring, predictive analytics, and intelligent forecasting for maximum solar farm performance." />
-    <meta property="twitter:image" content="https://customer-assets.emergentagent.com/job_d9b73cf7-eeb5-4abd-977e-ef6aecfce862/artifacts/jkz3bb08_KLARITYIQ_logo_original.png" />
-    
+    <meta property="twitter:url" content="https://klarityiq.ai/" />
+    <meta property="twitter:title" content="KlarityIQ | From Connected Data to Autonomous Action" />
+    <meta property="twitter:description" content="KlarityIQ connects your IoT infrastructure, deploys agentic AI to act on it in real time, and delivers the digital transformation outcomes your business needs." />
+    <meta property="twitter:image" content="https://klarityiq.ai/icon.png" />
+
     <!-- PWA Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
+
+    <!-- Inter — shared across every page, loaded once here instead of per-page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Structured Data - JSON-LD for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "Organization",
       "name": "KlarityIQ",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "description": "AI-powered solar farm analytics and monitoring platform for utility-scale solar operations. Real-time monitoring, predictive analytics, and intelligent forecasting.",
-      "url": "https://shubhamsinghmutualmobile.github.io/klarityiq-web/",
-      "screenshot": "https://customer-assets.emergentagent.com/job_d9b73cf7-eeb5-4abd-977e-ef6aecfce862/artifacts/jkz3bb08_KLARITYIQ_logo_original.png",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "description": "Contact for custom pricing"
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "KlarityIQ",
-        "url": "https://shubhamsinghmutualmobile.github.io/klarityiq-web/",
-        "logo": "https://customer-assets.emergentagent.com/job_d9b73cf7-eeb5-4abd-977e-ef6aecfce862/artifacts/jkz3bb08_KLARITYIQ_logo_original.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+91-9310180414",
-          "contactType": "Sales",
-          "email": "info@klarityiq.ai",
-          "availableLanguage": "English"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/klarityiq"
-        ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "127"
+      "description": "KlarityIQ connects your IoT infrastructure, deploys agentic AI to act on it in real time, and delivers the digital transformation outcomes your business needs.",
+      "url": "https://klarityiq.ai/",
+      "logo": "https://klarityiq.ai/icon.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Sales",
+        "email": "hello@klarityiq.ai",
+        "availableLanguage": "English"
       }
     }
     </script>
-    
+
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -111,8 +90,6 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-    
-    <title>KlarityIQ - AI Business Intelligence</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

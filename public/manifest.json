@@ -1,11 +1,11 @@
 {
   "short_name": "KlarityIQ",
-  "name": "KlarityIQ - Solar Farm Analytics Platform",
-  "description": "AI-powered solar farm analytics and monitoring platform",
+  "name": "KlarityIQ - From Connected Data to Autonomous Action",
+  "description": "IoT connectivity, agentic AI, and digital transformation on one platform.",
   "icons": [
     {
-      "src": "logo_fav.png",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "favicon.ico",
+      "sizes": "64x64",
       "type": "image/x-icon"
     },
     {
@@ -14,19 +14,19 @@
       "sizes": "32x32"
     },
     {
-      "src": "logo_fav.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo_fav.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "theme_color": "#12142b",
+  "background_color": "#12142b",
   "scope": "/"
 }
